@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/', (req,res)=> {
+app.post('/generate-resume', (req,res)=> {
   console.log("req rec");
   console.log(req.query.theme);
   const resumeData = req.body;
@@ -18,7 +18,7 @@ app.post('/', (req,res)=> {
       return res.status(500).send('Error generating resume');
     }
 
-  // res.sendFile('C:/Users/as comp/Desktop/Resume project/resume.pdf');
+  res.sendFile('Resume-generated');
   })
 })
 
