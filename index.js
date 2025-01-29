@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/generate-resume', (req,res)=> {
+app.post('/', (req,res)=> {
   console.log("req rec");
   console.log(req.query.theme);
   const resumeData = req.body;
