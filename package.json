@@ -1,0 +1,15 @@
+{
+  "name": "api-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonresume-theme-flat": "^0.3.7"
+  }
+}
