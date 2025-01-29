@@ -22,7 +22,7 @@ app.post('/generate-resume', (req,res)=> {
   })
 })
 
-app.get("/message", (req, res)=>{
+app.get("/", (req, res)=>{
   res.end("Res sended");
 })
 
