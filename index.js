@@ -18,8 +18,12 @@ app.post('/generate-resume', (req,res)=> {
       return res.status(500).send('Error generating resume');
     }
 
-  res.sendFile('Resume-generated');
+  // res.sendFile('Resume-generated');
   })
+})
+
+app.get("/message", (req, res)=>{
+  res.end("Res sended");
 })
 
 app.listen(3000, () => console.log('Server is running on port 3000'));
